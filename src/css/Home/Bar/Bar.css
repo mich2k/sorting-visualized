@@ -1,0 +1,42 @@
+:root {
+	--idle: #944646;
+	--primary: green;
+	--blue: blue;
+	--red: red;
+	--secondary: yellow;
+	--process: orange;
+	--text-color: black;
+}
+
+.Bar {
+	background-color: var(--idle);
+	color: var(--text-color-dark);
+	display: flex;
+	flex-direction: column reverse;
+	align-items: flex-end;
+	transition: 150ms ease-in-out;
+}
+
+.InnerBarValue {
+	margin: 0 auto 0.25rem;
+}
+
+.sortedState {
+	background-color: var(--primary);
+}
+
+.state_d {
+	background-color: var(--blue);
+}
+
+.state_c {
+	background-color: var(--red);
+}
+
+.state_b {
+	background-color: var(--secondary);
+}
+
+.state_a {
+	background-color: var(--process);
+}

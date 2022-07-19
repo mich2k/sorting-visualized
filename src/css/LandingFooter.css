@@ -1,0 +1,53 @@
+#footer-style {
+	-webkit-text-size-adjust: 100%;
+	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	line-height: 1.4285em;
+	box-sizing: inherit;
+	position: relative;
+	font-size: 1rem;
+	padding: 1em 0em;
+	margin: 0em;
+	padding-left: 0em;
+	padding-right: 0em;
+	border-radius: 0px;
+	border: none;
+	box-shadow: none;
+	background: #1b1c1d; /*  #1b1c1d  */
+	color: rgba(255, 255, 255, 0.9);
+	border-bottom: none;
+
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+span,
+a {
+	font-size: 15pt;
+}
+
+span#footer-1:hover {
+	color: green;
+	font-style: italic;
+}
+span#footer-2:hover {
+	color: white;
+	font-style: italic;
+}
+span#footer-3:hover {
+	color: red;
+	font-style: italic;
+}
+
+.column {
+	min-height: 10vh !important;
+	flex: 10% 1 !important;
+	margin-top: 45px !important;
+}
+
+.filling {
+	min-height: 30vh;
+	bottom: 0;
+}

@@ -1,0 +1,41 @@
+.LegendRow {
+	display: block;
+	margin-left: 28px;
+	margin-right: auto;
+	width: 50%;
+}
+
+.Legend_Item {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 4rem;
+	padding: 4px;
+}
+
+.Box {
+	flex-shrink: 0;
+	height: 1rem;
+	width: 1rem;
+	margin-right: 0.5rem;
+	border-radius: 50%;
+}
+
+.Unsorted {
+	border: 1px solid var(--text-color);
+	background-color: var(--white);
+}
+.sortedState {
+	background-color: var(--primary);
+}
+.firstLabel {
+	background-color: var(--process);
+}
+.secondLabel {
+	background-color: var(--secondary);
+}
+.thirdLabel {
+	background-color: var(--red);
+}
+.fourthLabel {
+	background-color: var(--blue);
+}

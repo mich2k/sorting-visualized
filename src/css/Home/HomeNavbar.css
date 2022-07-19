@@ -1,0 +1,8 @@
+.pointerOnHover {
+	cursor: pointer !important;
+}
+.myNavbarSelect {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
