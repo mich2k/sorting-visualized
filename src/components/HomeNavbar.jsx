@@ -11,18 +11,18 @@ export default class Menu extends Component {
 	render() {
 		return (
 			<div className="massive ui menu">
-				<Link to="/">
-					<div className="header item">Sorting, Visualized.</div>
+				<Link className="item" to="/">
+					<div className="header">Sorting, Visualized.</div>
 				</Link>
-				<Link to="/menu">
-					<span className="item">Home</span>
+				<Link className="item" to="/menu">
+					<span>Home</span>
 				</Link>
 
-				<Link to="/explainer">
-					<span className="item">Explainer</span>
+				<Link className="item" to="/explainer">
+					<span>Explainer</span>
 				</Link>
-				<Link to="/about">
-					<span className="item">About</span>
+				<Link className="item" to="/about">
+					<span>About</span>
 				</Link>
 				<div id="home-right-menu-alg" className="right menu">
 					<div className="pointerOnHover item" onClick={this.props.onGenerateRandomArray}>
