@@ -17,11 +17,18 @@
 	margin-right: 30px;
 }
 
-#left-col{
+/* handled footer + scroll bars are shown only when 
+needed both for x and y axis, used important to override 
+semantic-ui css styling rules */
+
+#left-col,
+.alg-description {
 	overflow: scroll !important;
+	overflow-y: auto !important;
+	overflow-x: auto !important;
 }
 
-#complexity-alg-table{
+#complexity-alg-table {
 	margin-bottom: 150px;
 }
 
