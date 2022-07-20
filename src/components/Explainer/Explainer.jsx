@@ -439,7 +439,7 @@ Sorting is typically done in-place, by iterating up the array, growing the sorte
 							Selected:
 							<code> {this.state.curr_algorithm} Sort</code>
 						</h2>
-						{printAlg(this.state.curr_algorithm)}
+						<div id="alg-highlight-wrapper">{printAlg(this.state.curr_algorithm)}</div>
 					</div>
 					<div className="column">
 						<div id="right-col">{printTable(this.state.curr_algorithm)}</div>

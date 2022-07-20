@@ -6,7 +6,7 @@
 }
 .row {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 70px;
 }
 
 .column {
@@ -21,7 +21,12 @@
 needed both for x and y axis, used important to override 
 semantic-ui css styling rules */
 
-#left-col,
+
+#alg-highlight-wrapper{
+	height: 100%;
+}
+
+#alg-highlight-wrapper,
 .alg-description {
 	overflow: scroll !important;
 	overflow-y: auto !important;
@@ -47,21 +52,4 @@ semantic-ui css styling rules */
 	margin: auto;
 	width: 50%;
 	padding: 10px;
-}
-
-html,
-body {
-	height: 100%;
-	margin: 0;
-}
-.wrapper {
-	min-height: 100%;
-
-	/* Equal to height of footer */
-	/* But also accounting for potential margin-bottom of last child */
-	margin-bottom: -80px;
-}
-.ft,
-.push {
-	height: 80px;
 }
