@@ -390,7 +390,7 @@ Sorting is typically done in-place, by iterating up the array, growing the sorte
 							alt="algorithm gif"
 						/>
 					</div>
-					<table className="small ui celled table">
+					<table id="complexity-alg-table" className="small ui celled table">
 						<thead>
 							<tr>
 								<th>{String(which) + " Sort"}</th>
@@ -433,8 +433,8 @@ Sorting is typically done in-place, by iterating up the array, growing the sorte
 			<div className="main-explainer">
 				<NavBar onAlgorithmChange={this.handleAlgorithmChange}></NavBar>
 
-				<div className="row">
-					<div className="column">
+				<div className="wrapper row">
+					<div id="left-col" className="column">
 						<h2 id="heading-explainer">
 							Selected:
 							<code> {this.state.curr_algorithm} Sort</code>
@@ -444,6 +444,7 @@ Sorting is typically done in-place, by iterating up the array, growing the sorte
 					<div className="column">
 						<div id="right-col">{printTable(this.state.curr_algorithm)}</div>
 					</div>
+					<div className="push"></div>
 				</div>
 				<div id="ft">
 					<AppFooter></AppFooter>
