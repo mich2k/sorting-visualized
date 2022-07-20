@@ -54,14 +54,17 @@ class Home extends Component {
 			}
 			return arr;
 		}
-		let array = Array(this.state.arraySize).fill(0);
-		for (let i = 1; i <= this.state.arraySize; i++) {
-			array[i - 1] = i;
+		let genArray = Array(this.state.arraySize);
+		for (let i = 1; i <= genArray.length; i++) {
+			genArray[i - 1] = i;
 		}
-		array = shuffleArray(array);
+		genArray = shuffleArray(genArray);
+		console.dir(genArray);
+		console.log(this.state.arraySize);
+
 		this.setState(
 			{
-				array: array,
+				array: genArray,
 				stepHistory: []
 			},
 			this.createRecord
@@ -93,10 +96,13 @@ class Home extends Component {
 	};
 
 	handleArraySizeChange = (e) => {
+		function syncGenCall() {
+			this.generateInOrderArray();
+		}
 		let arrLen = Number(e.target.value);
 		arrLen = arrLen > 500 ? 500 : arrLen;
 		arrLen = arrLen < 0 ? 3 : arrLen;
-		this.setState({ arraySize: arrLen }, this.generateInOrderArray());
+		this.setState({ arraySize: arrLen }, syncGenCall);
 	};
 
 	createRecord = () => {
