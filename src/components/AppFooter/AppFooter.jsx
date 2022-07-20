@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/AppFooter.css";
-import unimoreLogo from "../../unimore.png";
+import unimoreLogo from "../../res/unimore.png";
 
 function Footer() {
 	return (

@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "../../css/Explainer/Explainer.css";
 import AppFooter from "../AppFooter/AppFooter";
+import shellSortGif from "../../res/shell-sort.gif";
 class Explainer extends React.Component {
 	state = { curr_algorithm: "Bubble" };
 
@@ -21,6 +22,10 @@ class Explainer extends React.Component {
 				complexity_avg: "Lorem",
 				complexity_worst: "Lorem",
 				space_worst: "lorem",
+				gif_size: 300,
+
+				gif_src:
+					"https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif",
 				description:
 					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
 				snippet: `function swap(arr, xp, yp){
@@ -45,6 +50,9 @@ class Explainer extends React.Component {
 				complexity_avg: "Lorem",
 				complexity_worst: "Lorem",
 				space_worst: "lorem",
+				gif_size: 300,
+
+				gif_src: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif",
 				description:
 					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
 				snippet: `
@@ -122,6 +130,9 @@ class Explainer extends React.Component {
 					</span>
 				),
 				space_worst: "lorem",
+				gif_size: 300,
+
+				gif_src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif",
 				description:
 					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
 				snippet: `function merge(arr, l, m, r)
@@ -196,6 +207,9 @@ function mergeSort(arr,l, r){
 				complexity_best: "Lorem ipsum",
 				complexity_avg: "Lorem",
 				complexity_worst: "Lorem",
+				gif_size: 300,
+
+				gif_src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif",
 				space_worst: "lorem",
 				description:
 					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
@@ -252,6 +266,8 @@ function heapify(arr, n, i)
 				complexity_avg: "Lorem",
 				complexity_worst: "Lorem",
 				space_worst: "lorem",
+				gif_size: 300,
+				gif_src: { shellSortGif }.shellSortGif,
 				description:
 					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
 				snippet: `function shellSort(arr) {
@@ -286,6 +302,9 @@ function heapify(arr, n, i)
 				complexity_avg: "Lorem",
 				complexity_worst: "Lorem",
 				space_worst: "lorem",
+				gif_size: 300,
+				gif_src:
+					"https://i2.wp.com/algorithms.tutorialhorizon.com/files/2019/01/Selection-Sort-Gif.gif?ssl=1",
 				description:
 					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
 				snippet: `
@@ -319,6 +338,9 @@ function heapify(arr, n, i)
 				complexity_avg: "Lorem",
 				complexity_worst: "Lorem",
 				space_worst: "lorem",
+				gif_size: 300,
+				gif_src:
+					"https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif",
 				description:
 					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
 				snippet: `
@@ -345,11 +367,19 @@ function heapify(arr, n, i)
 		};
 
 		function printTable(which) {
+			console.dir(alg_bodies[which].gif_src);
 			return (
 				<div id="alg_description_table">
 					<div className="alg-description">
 						<h2 style={{ textAlign: "center" }}>The &ldquo;{String(which)} Sort&rdquo;</h2>
 						<p> {alg_bodies[which].description}</p>
+					</div>
+					<div id="alg-gif" className="center">
+						<img
+							src={alg_bodies[which].gif_src}
+							width={`${alg_bodies[which].gif_size}px`}
+							alt="algorithm gif"
+						/>
 					</div>
 					<table className="small ui celled table">
 						<thead>
