@@ -26,8 +26,10 @@ class Explainer extends React.Component {
 
 				gif_src:
 					"https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif",
-				description:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
+				description: `
+                    Is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements bubble to the top of the list.
+                    Due to its simplicity, bubble sort is often used to introduce the concept of an algorithm, or a sorting algorithm, to introductory computer science students.
+                    `,
 				snippet: `function swap(arr, xp, yp){
           var temp = arr[xp];
           arr[xp] = arr[yp];
@@ -53,8 +55,9 @@ class Explainer extends React.Component {
 				gif_size: 300,
 
 				gif_src: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif",
-				description:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
+				description: `Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+
+                Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation (formally, a total order) is defined. `,
 				snippet: `
       // A utility function to swap two elements
       function swap(arr, i, j) {
@@ -133,8 +136,9 @@ class Explainer extends React.Component {
 				gif_size: 300,
 
 				gif_src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif",
-				description:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
+				description: `
+                This algorithm uses a recursive algorithm to achieve its results. The divide-and-conquer algorithm breaks down a big problem into smaller, more manageable pieces that look similar to the initial problem. It then solves these subproblems recursively and puts their solutions together to solve the original problem. Divide-and-conquer recursively solves subproblems; each subproblem must be smaller than the original problem, and each must have a base case.
+                By definition, if it is only one element in the list, it is sorted. Then, merge sort combines the smaller sorted lists keeping the new list sorted too. `,
 				snippet: `function merge(arr, l, m, r)
 {
     var n1 = m - l + 1;
@@ -211,8 +215,8 @@ function mergeSort(arr,l, r){
 
 				gif_src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif",
 				space_worst: "lorem",
-				description:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
+				description: `Is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region. Unlike selection sort, heapsort does not waste time with a linear-time scan of the unsorted region; rather, heap sort maintains the unsorted region in a heap data structure to more quickly find the largest element in each step.
+                `,
 				snippet: `
 function sort( arr)
 {
@@ -268,8 +272,9 @@ function heapify(arr, n, i)
 				space_worst: "lorem",
 				gif_size: 300,
 				gif_src: { shellSortGif }.shellSortGif,
-				description:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
+				description: `
+                Is an in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort). The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. By starting with far apart elements, it can move some out-of-place elements into position faster than a simple nearest neighbor exchange. 
+                `,
 				snippet: `function shellSort(arr) {
           let n = arr.length;
         
@@ -305,8 +310,9 @@ function heapify(arr, n, i)
 				gif_size: 300,
 				gif_src:
 					"https://i2.wp.com/algorithms.tutorialhorizon.com/files/2019/01/Selection-Sort-Gif.gif?ssl=1",
-				description:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
+				description: `
+                The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
+                `,
 				snippet: `
         function swap(arr,xp, yp)
         {
@@ -341,8 +347,11 @@ function heapify(arr, n, i)
 				gif_size: 300,
 				gif_src:
 					"https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif",
-				description:
-					"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, cum quae, ab vel quam, quo fugiat voluptatum sed et maxime cupiditate dolore libero. Illo dolorum mollitia quo odio vitae. Debitis vero explicabo temporibus dolorum similique odio, fuga ex, perspiciatis autem atque, ut quisquam! Cum facere unde, cupiditate reprehenderit suscipit voluptatem harum aut iusto repudiandae adipisci ab consequuntur quo incidunt quae sed error, omnis earum fuga dolorum tempore consequatur magni? Architecto voluptate minus cupiditate, autem perferendis, dolorum neque nulla consequatur maxime fugit eaque quae molestiae expedita aperiam distinctio est non facere, excepturi corporis ducimus quasi magni quisquam ea blanditiis? Deleniti facilis nam esse, veritatis, laudantium perferendis temporibus pariatur voluptas officiis commodi tenetur. Saepe veritatis nihil fugit doloremque blanditiis eligendi excepturi adipisci enim ipsa, a provident sapiente commodi nemo laborum placeat iste quae omnis ducimus, velit, libero atque? Laboriosam, expedita! Veritatis, repellendus id natus deleniti minus totam consectetur maiores perferendis, iste odio placeat nisi? Optio, magni beatae! Ad deleniti commodi perspiciatis nesciunt sequi dolore voluptas doloribus? Vel eius sapiente distinctio qui repellat suscipit minima dolorem sunt, iusto nihil harum tenetur debitis totam magnam enim ipsum quibusdam molestias optio corrupti officia. Pariatur rem fugit sit! Cum rerum quos voluptas eveniet reprehenderit nam ipsa?",
+				description: `
+                Insertion sort iterates, consuming one input element each repetition, and grows a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
+
+Sorting is typically done in-place, by iterating up the array, growing the sorted list behind it. At each array-position, it checks the value there against the largest value in the sorted list (which happens to be next to it, in the previous array-position checked). If larger, it leaves the element in place and moves to the next. If smaller, it finds the correct position within the sorted list, shifts all the larger values up to make a space, and inserts into that correct position.
+                `,
 				snippet: `
         function insertionSort(arr, n) 
         { 
