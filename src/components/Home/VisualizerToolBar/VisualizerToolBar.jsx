@@ -7,7 +7,8 @@ const VisualizerToolBar = ({
 	onForward,
 	onRepeat,
 	onAdjustSpeed,
-	playing
+	playing,
+	onArraySizeChange
 }) => {
 	return (
 		<div className="VisualizerToolBar">
@@ -25,6 +26,11 @@ const VisualizerToolBar = ({
 			</button>
 			<div id="speed-border-wrapper">
 				<div id="speed-select-wrapper">
+					<div id="speed-select-label-wrapper" style={{ marginTop: "10px" }}>
+						<label className="control-label" htmlFor="speed-select-wrapper">
+							Speed Selector
+						</label>
+					</div>
 					<select
 						className="ui compact selection dropdown"
 						id="speed-select"
@@ -43,8 +49,26 @@ const VisualizerToolBar = ({
 						<option value="250">250x</option>
 					</select>
 				</div>
-				<div id="speed-select-label-wrapper" style={{ marginTop: "10px" }}>
-					<label htmlFor="speed-select-wrapper">Speed Selector</label>
+				<div id="array-size-select-wrapper">
+					<div id="arrsize-select-label-wrapper" style={{ marginTop: "10px" }}>
+						<label className="control-label" htmlFor="array-size-select-wrapper">
+							Array Length
+						</label>
+					</div>
+					<select
+						onChange={onArraySizeChange}
+						className="ui compact selection dropdown"
+						defaultValue="5">
+						<option value="3">3</option>
+						<option value="5">5</option>
+						<option value="20">20</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="400">400</option>
+						<option value="500">500</option>
+					</select>
 				</div>
 			</div>
 		</div>

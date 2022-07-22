@@ -14,7 +14,7 @@ class About extends Component {
 
 	gsap_anim() {
 		gsap.registerPlugin(ScrollTrigger);
-		const boxes = gsap.utils.toArray(".item");
+		const boxes = gsap.utils.toArray(".elem");
 		const footer = gsap.utils.toArray("#about-footer");
 		boxes.concat(footer).forEach((elem) => {
 			let myDuration = 2.5;
@@ -44,7 +44,7 @@ class About extends Component {
 				<Navbar></Navbar>
 
 				<section>
-					<div className="item float-text-left">
+					<div className="elem float-text-left">
 						<h1>Sorting, Visualized.</h1>
 						<span style={{ fontSize: "1.7rem", marginLeft: "40px" }}>
 							born as a university project, in &quot;University of Modena e Reggio Emilia&quot;
@@ -53,11 +53,11 @@ class About extends Component {
 					</div>
 					<i
 						style={{ textAlign: "center", marginTop: "25px", marginLeft: "50px" }}
-						className="item huge angle double down icon"></i>
+						className="elem huge angle double down icon"></i>
 				</section>
 				<section>
-					<div className="item float-text-left">
-						<h1>Techologies used</h1>
+					<div className="elem float-text-left">
+						<h1>Technologies used</h1>
 						<div className="tech-wrapper">
 							<a href="https://www.react.com" target="_blank" rel="noopener noreferrer">
 								<img
@@ -121,7 +121,7 @@ class About extends Component {
 					</div>
 				</section>
 				<section>
-					<div className="item">
+					<div className="elem">
 						<h1>FOSS software, on</h1>
 						<a href={repo_url} target="_blank" rel="noopener noreferrer">
 							<img
@@ -132,7 +132,7 @@ class About extends Component {
 						</a>
 					</div>
 				</section>
-				<div id="about-footer">
+				<div className="elem" id="about-footer">
 					<AppFooter></AppFooter>
 				</div>
 			</div>

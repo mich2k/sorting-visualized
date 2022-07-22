@@ -2,12 +2,17 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../css/Home/HomeNavbar.css";
 export default class Menu extends Component {
-	state = { activeItem: "home" };
+	state = { activeItem: "home", chosenRandomizer: "inOrderRandomize" };
 	handleItemClick = (name) => {
 		const newState = { activeItem: name };
 		this.setState(newState);
 	};
-
+	handleRandomizerChange = (e) => {
+		this.setState({
+			chosenRandomizer: e.target.value
+		});
+		// console.dir(this.state.chosenRandomizer);
+	};
 	render() {
 		return (
 			<div className="massive ui menu">
@@ -15,7 +20,7 @@ export default class Menu extends Component {
 					<div className="header">Sorting, Visualized.</div>
 				</Link>
 				<Link className="item" to="/menu">
-					<span>Home</span>
+					<span>Visualizer</span>
 				</Link>
 
 				<Link className="item" to="/explainer">
@@ -25,14 +30,23 @@ export default class Menu extends Component {
 					<span>About</span>
 				</Link>
 				<div id="home-right-menu-alg" className="right menu">
-					<div className="pointerOnHover item" onClick={this.props.onGenerateRandomArray}>
-						<span>Randomize</span>
+					<div
+						className="pointerOnHover item"
+						onClick={
+							this.state.chosenRandomizer === "inOrderRandomize"
+								? this.props.onGenerateInOrderRandomArray
+								: this.props.onGenerateRandomArray
+						}>
+						<span>Randomize!</span>
 					</div>
-					<div className="pointerOnHover item" onClick={this.props.onGenerateInOrderRandomArray}>
-						<p style={{ textAlign: "center" }}>
-							Bounded Randomize <br></br>{" "}
-							<span style={{ fontSize: "1.2rem" }}>(1 to array size)</span>
-						</p>
+					<div className="pointerOnHover item">
+						<select
+							className="myNavbarSelect pointerOnHover"
+							onChange={this.handleRandomizerChange}
+							defaultValue="inOrderRandomize">
+							<option value="inOrderRandomize">Bounded Randomizer</option>
+							<option value="randomRandomize">Random Randomizer</option>
+						</select>
 					</div>
 					<div className="pointerOnHover item">
 						<select
@@ -46,22 +60,6 @@ export default class Menu extends Component {
 							<option value="Shell">Shell Sort</option>
 							<option value="Selection">Selection Sort</option>
 							<option value="Insertion">Insertion Sort</option>
-						</select>
-					</div>
-					<div className="pointerOnHover item">
-						<select
-							className="myNavbarSelect pointerOnHover"
-							onChange={this.props.onArraySizeChange}
-							defaultValue="5">
-							<option value="3">3</option>
-							<option value="5">5</option>
-							<option value="20">20</option>
-							<option value="50">50</option>
-							<option value="100">100</option>
-							<option value="200">200</option>
-							<option value="300">300</option>
-							<option value="400">400</option>
-							<option value="500">500</option>
 						</select>
 					</div>
 					<div className="item">

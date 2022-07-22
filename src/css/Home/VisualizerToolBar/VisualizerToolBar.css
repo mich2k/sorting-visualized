@@ -10,3 +10,8 @@
 	text-align: center !important;
 	margin-top: 20px;
 }
+
+
+.control-label{
+	font-size: 1.2rem;
+}

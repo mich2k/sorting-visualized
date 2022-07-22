@@ -161,6 +161,7 @@ class SortVisualizer extends Component {
 					onRepeat={this.repeat.bind(this)}
 					onAdjustSpeed={this.changePlaySpeed}
 					playing={this.state.timeIdArr.length > 0}
+					onArraySizeChange={this.props.onArraySizeChange}
 				/>
 
 				<ColorKey {...this.props.colorKey} algorithm={this.props.algorithm} />

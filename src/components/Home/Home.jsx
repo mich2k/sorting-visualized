@@ -123,8 +123,7 @@ class Home extends Component {
 					onGenerateInOrderRandomArray={this.generateInOrderArray}
 					algorithm={this.state.algorithm}
 					onAlgorithmChange={this.handleAlgorithmChange}
-					arraySize={this.state.arraySize}
-					onArraySizeChange={this.handleArraySizeChange}></HomeNavbar>
+					arraySize={this.state.arraySize}></HomeNavbar>
 				<b>
 					{" "}
 					<span id="selected-alg-header">
@@ -136,7 +135,7 @@ class Home extends Component {
 					stepHistory={this.state.stepHistory}
 					colorKey={colorKey}
 					algorithm={this.state.algorithm}
-				/>
+					onArraySizeChange={this.handleArraySizeChange}></SortVisualizer>
 
 				<AppFooter></AppFooter>
 			</div>

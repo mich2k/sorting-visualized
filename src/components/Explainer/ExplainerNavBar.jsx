@@ -14,7 +14,7 @@ export default class MenuExampleInvertedSegment extends Component {
 					<div className="header item">Sorting, Visualized.</div>
 				</Link>
 				<Link to="/menu">
-					<span className="item">Home</span>
+					<span className="item">Visualizer</span>
 				</Link>
 
 				<Link to="/explainer">

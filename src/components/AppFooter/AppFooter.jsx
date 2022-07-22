@@ -15,7 +15,7 @@ function Footer() {
 							</div>
 							<div className="three wide column">
 								<h3 className="ui header"></h3>
-								<span> Designed and Managed by First Person and Second Person</span>
+								<span> Designed and Managed by Michele Giarletta and Nicola Bicocchi</span>
 							</div>
 						</div>
 					</div>

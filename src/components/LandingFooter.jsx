@@ -10,21 +10,15 @@ function Footer() {
 							<div className="three wide column">
 								<h3 className="ui inverted header">Useful Links</h3>
 								<div className="ui inverted link list">
-									<a href="www.google.it" className="item">
+									<a href="https://www.unimore.it/" className="item">
 										University of Modena and Reggio Emilia
-									</a>
-									<a href="www.google.it" className="item">
-										Lorem
-									</a>
-									<a href="www.google.it" className="item">
-										Lorem
 									</a>
 								</div>
 							</div>
 							<div className="three wide column">
 								<h3 className="ui inverted header">Ref.</h3>
 								<div className="ui inverted link list">
-									<a href="www.google.it" className="item">
+									<a href="https://github.com/nbicocchi" className="item">
 										Prof. Bicocchi Nicola
 									</a>
 									<a href="https://www.gmichele.it" className="item">
