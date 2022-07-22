@@ -107,6 +107,16 @@ class About extends Component {
 									height="100"
 								/>{" "}
 							</a>
+							<a href="https://semantic-ui.com" target="_blank" rel="noopener noreferrer">
+								<img
+									src="https://react.semantic-ui.com/logo.png"
+									alt="semanticui logo"
+									height="100"
+								/>{" "}
+							</a>
+							<a href="https://prismjs.com" target="_blank" rel="noopener noreferrer">
+								<img src="https://prismjs.com/assets/logo.svg" alt="semanticui logo" height="100" />{" "}
+							</a>
 						</div>
 					</div>
 				</section>
