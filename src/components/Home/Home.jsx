@@ -39,14 +39,31 @@ class Home extends Component {
 		"Shell Sort": ShellSortLegend
 	};
 
+	constructor(props) {
+		super(props);
+		this.generateInOrderArray = this.generateInOrderArray.bind(this);
+	}
+
 	componentDidMount() {
 		this.generateInOrderArray();
 	}
 
-	generateInOrderArray = () => {
-		{
-			/* commit 19.07.22*/
+	generateReverseInOrderArray = () => {
+		let genArray = Array(this.state.arraySize);
+		for (let i = 1; i <= genArray.length; i++) {
+			genArray[i - 1] = i;
 		}
+		genArray = genArray.reverse();
+		this.setState(
+			{
+				array: genArray,
+				stepHistory: []
+			},
+			this.createRecord
+		);
+	};
+
+	generateInOrderArray = () => {
 		function shuffleArray(arr) {
 			for (let i = arr.length - 1; i > 0; i--) {
 				const j = Math.floor(Math.random() * (i + 1));
@@ -59,8 +76,8 @@ class Home extends Component {
 			genArray[i - 1] = i;
 		}
 		genArray = shuffleArray(genArray);
-		console.dir(genArray);
-		console.log(this.state.arraySize);
+		// console.dir(genArray);
+		// console.log(this.state.arraySize);
 
 		this.setState(
 			{
@@ -121,6 +138,7 @@ class Home extends Component {
 				<HomeNavbar
 					onGenerateRandomArray={this.generateRandomArray}
 					onGenerateInOrderRandomArray={this.generateInOrderArray}
+					onGenerateReverseInOrderArray={this.generateReverseInOrderArray}
 					algorithm={this.state.algorithm}
 					onAlgorithmChange={this.handleAlgorithmChange}
 					arraySize={this.state.arraySize}></HomeNavbar>

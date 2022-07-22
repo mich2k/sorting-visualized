@@ -3,15 +3,27 @@ import { Link } from "react-router-dom";
 import "../css/Home/HomeNavbar.css";
 export default class Menu extends Component {
 	state = { activeItem: "home", chosenRandomizer: "inOrderRandomize" };
+
 	handleItemClick = (name) => {
 		const newState = { activeItem: name };
 		this.setState(newState);
 	};
+
 	handleRandomizerChange = (e) => {
-		this.setState({
-			chosenRandomizer: e.target.value
-		});
-		// console.dir(this.state.chosenRandomizer);
+		this.setState(
+			{
+				chosenRandomizer: e.target.value
+			},
+			() => {
+				this.state.chosenRandomizer === "inOrderRandomize"
+					? this.props.onGenerateInOrderRandomArray()
+					: this.state.chosenRandomizer === "randomRandomize"
+					? this.props.onGenerateRandomArray()
+					: this.state.chosenRandomizer === "inOrderReverseRandomize"
+					? this.props.onGenerateReverseInOrderArray()
+					: null;
+			}
+		);
 	};
 	render() {
 		return (
@@ -30,22 +42,16 @@ export default class Menu extends Component {
 					<span>About</span>
 				</Link>
 				<div id="home-right-menu-alg" className="right menu">
-					<div
-						className="pointerOnHover item"
-						onClick={
-							this.state.chosenRandomizer === "inOrderRandomize"
-								? this.props.onGenerateInOrderRandomArray
-								: this.props.onGenerateRandomArray
-						}>
-						<span>Randomize!</span>
-					</div>
 					<div className="pointerOnHover item">
 						<select
 							className="myNavbarSelect pointerOnHover"
 							onChange={this.handleRandomizerChange}
 							defaultValue="inOrderRandomize">
-							<option value="inOrderRandomize">Bounded Randomizer</option>
+							<option value="inOrderRandomize">Bounded Continuous Randomizer</option>
 							<option value="randomRandomize">Random Randomizer</option>
+							<option value="inOrderReverseRandomize">
+								Reverse Sorted Bounded Continuous Randomizer
+							</option>
 						</select>
 					</div>
 					<div className="pointerOnHover item">
