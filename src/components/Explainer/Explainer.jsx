@@ -18,10 +18,22 @@ class Explainer extends React.Component {
 	render() {
 		const alg_bodies = {
 			Bubble: {
-				complexity_best: "Lorem ipsum",
-				complexity_avg: "Lorem",
-				complexity_worst: "Lorem",
-				space_worst: "lorem",
+				complexity_best: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				complexity_avg: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				space_worst: <span>O(1)</span>,
 				gif_size: 300,
 
 				gif_src:
@@ -48,10 +60,26 @@ class Explainer extends React.Component {
         }`
 			},
 			Quick: {
-				complexity_best: "Lorem ipsum",
-				complexity_avg: "Lorem",
-				complexity_worst: "Lorem",
-				space_worst: "lorem",
+				complexity_best: (
+					<span>
+						O(<em>n</em> log <em>n</em>)
+					</span>
+				),
+				complexity_avg: (
+					<span>
+						O(<em>n</em> log <em>n</em>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				space_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
 				gif_size: 300,
 
 				gif_src: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif",
@@ -132,7 +160,7 @@ class Explainer extends React.Component {
 						O(<em>n</em> log <em>n</em>)
 					</span>
 				),
-				space_worst: "lorem",
+				space_worst: <span>O(n)</span>,
 				gif_size: 300,
 
 				gif_src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif",
@@ -208,13 +236,25 @@ function mergeSort(arr,l, r){
 }`
 			},
 			Heap: {
-				complexity_best: "Lorem ipsum",
-				complexity_avg: "Lorem",
-				complexity_worst: "Lorem",
+				complexity_best: (
+					<span>
+						O(<em>n</em> log <em>n</em>)
+					</span>
+				),
+				complexity_avg: (
+					<span>
+						O(<em>n</em> log <em>n</em>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O(<em>n</em> log <em>n</em>)
+					</span>
+				),
 				gif_size: 300,
 
 				gif_src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif",
-				space_worst: "lorem",
+				space_worst: <span>O(n)</span>,
 				description: `Is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region. Unlike selection sort, heapsort does not waste time with a linear-time scan of the unsorted region; rather, heap sort maintains the unsorted region in a heap data structure to more quickly find the largest element in each step.
                 `,
 				snippet: `
@@ -266,10 +306,18 @@ function heapify(arr, n, i)
 }`
 			},
 			Shell: {
-				complexity_best: "Lorem ipsum",
-				complexity_avg: "Lorem",
-				complexity_worst: "Lorem",
-				space_worst: "lorem",
+				complexity_best: <span>O(n)</span>,
+				complexity_avg: (
+					<span>
+						O( (<em>n</em> log <em>n</em>)<sup>2</sup>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O( (<em>n</em> log <em>n</em>)<sup>2</sup>)
+					</span>
+				),
+				space_worst: <span>O(1)</span>,
 				gif_size: 300,
 				gif_src: { shellSortGif }.shellSortGif,
 				description: `
@@ -303,10 +351,22 @@ function heapify(arr, n, i)
         }`
 			},
 			Selection: {
-				complexity_best: "Lorem ipsum",
-				complexity_avg: "Lorem",
-				complexity_worst: "Lorem",
-				space_worst: "lorem",
+				complexity_best: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				complexity_avg: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				space_worst: <span>O(1)</span>,
 				gif_size: 300,
 				gif_src:
 					"https://i2.wp.com/algorithms.tutorialhorizon.com/files/2019/01/Selection-Sort-Gif.gif?ssl=1",
@@ -340,10 +400,18 @@ function heapify(arr, n, i)
         }`
 			},
 			Insertion: {
-				complexity_best: "Lorem ipsum",
-				complexity_avg: "Lorem",
-				complexity_worst: "Lorem",
-				space_worst: "lorem",
+				complexity_best: <span>O(n)</span>,
+				complexity_avg: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				space_worst: <span>O(1)</span>,
 				gif_size: 300,
 				gif_src:
 					"https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif",
