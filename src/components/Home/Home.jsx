@@ -10,6 +10,9 @@ import MergeSort, { MergeSortLegend } from "../../algorithms/MergeSort";
 import QuickSort, { QuickSortLegend } from "../../algorithms/QuickSort";
 import HeapSort, { HeapSortLegend } from "../../algorithms/HeapSort";
 import ShellSort, { ShellSortLegend } from "../../algorithms/ShellSort";
+import ThreeWayQuickSort, { ThreeWayQuickSortLegend } from "../../algorithms/ThreeWayQuickSort";
+import CocktailSort, { CocktailSortLegend } from "../../algorithms/CocktailSort";
+
 import AppFooter from "../AppFooter/AppFooter";
 class Home extends Component {
 	state = {
@@ -26,7 +29,9 @@ class Home extends Component {
 		"Merge Sort": MergeSort,
 		"Quick Sort": QuickSort,
 		"Heap Sort": HeapSort,
-		"Shell Sort": ShellSort
+		"Shell Sort": ShellSort,
+		"Cocktail Sort": CocktailSort,
+		"ThreeWayQuick Sort": ThreeWayQuickSort
 	};
 
 	ALG_MAP = {
@@ -36,7 +41,9 @@ class Home extends Component {
 		"Merge Sort": MergeSortLegend,
 		"Quick Sort": QuickSortLegend,
 		"Heap Sort": HeapSortLegend,
-		"Shell Sort": ShellSortLegend
+		"Shell Sort": ShellSortLegend,
+		"Cocktail Sort": CocktailSortLegend,
+		"ThreeWayQuick Sort": ThreeWayQuickSortLegend
 	};
 
 	constructor(props) {
@@ -108,8 +115,8 @@ class Home extends Component {
 
 	handleAlgorithmChange = (e) => {
 		let alg = e.target.value + " Sort";
-		// console.log(alg);
 		this.setState({ algorithm: alg }, this.generateInOrderArray());
+		console.log(alg);
 	};
 
 	handleArraySizeChange = (e) => {
