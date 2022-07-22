@@ -76,6 +76,6 @@ const MergeSort = (nums) => {
 	return stepHistory;
 };
 
-export const MergeSortLegend = createKey("Call Merge Sort", null, "Overwrite from axillary array");
+export const MergeSortLegend = createKey("Merge Sort Called", null, "Overwrite");
 
 export default MergeSort;

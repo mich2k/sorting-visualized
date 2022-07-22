@@ -53,3 +53,6 @@ semantic-ui css styling rules */
 	width: 50%;
 	padding: 10px;
 }
+.tech-wrapper{
+	display: inline-block;
+}

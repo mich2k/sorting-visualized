@@ -1,14 +1,24 @@
 section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &:nth-of-type(even) {
-      background-color: #eee;
-    }
-  }
-  .box {
-    background-color: purple;
-    padding: 100px;
-  }
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&:nth-of-type(even) {
+		background-color: #eee;
+	}
+}
+.box {
+	background-color: purple;
+	padding: 100px;
+}
+
+.float-text-left {
+	text-align: left;
+}
+
+.center {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
