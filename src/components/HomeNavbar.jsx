@@ -72,10 +72,8 @@ export default class Menu extends Component {
 							defaultValue="inOrderRandomize">
 							<option value="inOrderRandomize">Bounded Continuous Randomizer</option>
 							<option value="randomRandomize">Random Randomizer</option>
-							<option value="inOrderReverseRandomize">
-								Reverse Sorted Bounded Continuous Randomizer
-							</option>
-							<option value="inOrderAlmSortedRandomize">In Order Almost Sorted Randomizer</option>
+							<option value="inOrderReverseRandomize">Reverse Sorted Array</option>
+							<option value="inOrderAlmSortedRandomize">Bounded Almost Sorted Randomizer</option>
 							<option value="sortedArray">Sorted Array</option>
 						</select>
 					</div>
