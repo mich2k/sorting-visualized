@@ -174,7 +174,7 @@ class Home extends Component {
 				: null;
 		}
 		let alg = e.target.value + " Sort";
-		this.setState({ algorithm: alg }, syncGenCall());
+		this.setState({ algorithm: alg }, syncGenCall);
 		console.log(alg);
 	};
 
