@@ -35,11 +35,13 @@ export default class MenuExampleInvertedSegment extends Component {
 							defaultValue="Bubble">
 							<option value="Bubble">Bubble Sort</option>
 							<option value="Merge">Merge Sort</option>
+							<option value="ThreeWayQuick">Three Way QuickSort</option>
 							<option value="Quick">Quick Sort</option>
 							<option value="Heap">Heap Sort</option>
 							<option value="Shell">Shell Sort</option>
 							<option value="Selection">Selection Sort</option>
 							<option value="Insertion">Insertion Sort</option>
+							<option value="Cocktail">Cocktail SOrt</option>
 						</select>
 					</div>
 					<div className="item">

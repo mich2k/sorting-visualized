@@ -17,6 +17,189 @@ class Explainer extends React.Component {
 	componentDidUpdate() {}
 	render() {
 		const alg_bodies = {
+			ThreeWayQuick: {
+				complexity_best: <span>O(n)</span>,
+				complexity_avg: (
+					<span>
+						O(<em>n</em> log <em>n</em>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				space_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				gif_size: 400,
+
+				gif_src: "https://miro.medium.com/max/1298/1*wQXgYAYiCHO5IOQcEjcacA.jpeg",
+				description: `
+				In simple QuickSort algorithm, we select an element as pivot, partition the array around a pivot and recur for subarrays on the left and right of the pivot. 
+				Consider an array which has many redundant elements. For example, {1, 4, 2, 4, 2, 4, 1, 2, 4, 1, 2, 2, 2, 2, 4, 1, 4, 4, 4}. If 4 is picked as a pivot in Simple Quick Sort, we fix only one 4 and recursively process remaining occurrences.
+				The idea of 3 way Quick Sort is to process all occurrences of the pivot and is based on Dutch National Flag algorithm. 
+                    `,
+				snippet: `var i, j;
+ 
+				/*
+				 * This function partitions a in three parts a) a[l..i] contains all elements
+				 * smaller than pivot b) a[i+1..j-1] contains all occurrences of pivot c)
+				 * a[j..r] contains all elements greater than pivot
+				 */
+				function partition(a , l , r) {
+			 
+					i = l - 1;
+					j = r;
+					var p = l - 1, q = r;
+					var v = a[r];
+			 
+					while (true) {
+			 
+						// From left, find the first element greater than
+						// or equal to v. This loop will definitely
+						// terminate as v is last element
+						while (a[++i] < v)
+							;
+			 
+						// From right, find the first element smaller than
+						// or equal to v
+						while (v < a[--j])
+							if (j == l)
+								break;
+			 
+						// If i and j cross, then we are done
+						if (i >= j)
+							break;
+			 
+						// Swap, so that smaller goes on left greater goes
+						// on right
+						var temp = a[i];
+						a[i] = a[j];
+						a[j] = temp;
+			 
+						// Move all same left occurrence of pivot to
+						// beginning of array and keep count using p
+						if (a[i] == v) {
+							p++;
+							temp = a[i];
+							a[i] = a[p];
+							a[p] = temp;
+			 
+						}
+			 
+						// Move all same right occurrence of pivot to end of
+						// array and keep count using q
+						if (a[j] == v) {
+							q--;
+							temp = a[q];
+							a[q] = a[j];
+							a[j] = temp;
+						}
+					}
+			 
+					// Move pivot element to its correct index
+					var temp = a[i];
+					a[i] = a[r];
+					a[r] = temp;
+			 
+					// Move all left same occurrences from beginning
+					// to adjacent to arr[i]
+					j = i - 1;
+					for (k = l; k < p; k++, j--) {
+						temp = a[k];
+						a[k] = a[j];
+						a[j] = temp;
+					}
+			 
+					// Move all right same occurrences from end
+					// to adjacent to arr[i]
+					i = i + 1;
+					for (k = r - 1; k > q; k--, i++) {
+						temp = a[i];
+						a[i] = a[k];
+						a[k] = temp;
+					}
+				}
+			 
+				// 3-way partition based quick sort
+				function quicksort(a , l , r) {
+					if (r <= l)
+						return;
+			 
+					i = 0;
+					j = 0;
+			 
+					// Note that i and j are passed as reference
+					partition(a, l, r);
+			 
+					// Recur
+					quicksort(a, l, j);
+					quicksort(a, i, r);
+				}
+			 
+				// A utility function to print an array
+				function printarr(a , n) {
+					for (i = 0; i < n; ++i)
+						document.write(" "+ a[i]);
+					document.write("<br/>");
+				}
+			 
+				// Driver code   
+					var a = [ 4, 9, 4, 4, 1, 9, 4, 4, 9, 4, 4, 1, 4 ];
+					var size = a.length;
+			 
+					// Function Call
+					printarr(a, size);
+					quicksort(a, 0, size - 1);
+					printarr(a, size);`
+			},
+			Cocktail: {
+				complexity_best: <span>O(n)</span>,
+				complexity_avg: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				complexity_worst: (
+					<span>
+						O(n<sup>2</sup>)
+					</span>
+				),
+				space_worst: <span>O(1)</span>,
+				gif_size: 300,
+
+				gif_src: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sorting_shaker_sort_anim.gif",
+				description: `
+				Cocktail Shaker Sort is an algorithm that is a Bidirectional Bubble Sort.
+				The algorithm extends bubble sort by operating in two directions.
+				While it improves on bubble sort by more quickly moving items to the beginning of the list, it provides only marginal
+				performance improvements.
+                    `,
+				snippet: `export function cocktailShakerSort (items) {
+					for (let i = items.length - 1; i > 0; i--) {
+					  let j
+				  
+					  // Backwards
+					  for (j = items.length - 1; j > i; j--) {
+						if (items[j] < items[j - 1]) {
+						  [items[j], items[j - 1]] = [items[j - 1], items[j]]
+						}
+					  }
+				  
+					  // Forwards
+					  for (j = 0; j < i; j++) {
+						if (items[j] > items[j + 1]) {
+						  [items[j], items[j + 1]] = [items[j + 1], items[j]]
+						}
+					  }
+					}
+				  
+					return items
+				  }`
+			},
 			Bubble: {
 				complexity_best: (
 					<span>
