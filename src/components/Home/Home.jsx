@@ -159,8 +159,22 @@ class Home extends Component {
 	};
 
 	handleAlgorithmChange = (e) => {
+		function syncGenCall() {
+			let chosenRandomizer = document.getElementById("randomizer-select").value;
+			chosenRandomizer === "inOrderRandomize"
+				? this.generateInOrderArray()
+				: chosenRandomizer === "randomRandomize"
+				? this.generateRandomArray()
+				: chosenRandomizer === "inOrderReverseRandomize"
+				? this.generateReverseInOrderArray()
+				: chosenRandomizer === "inOrderAlmSortedRandomize"
+				? this.generateAlmostSortedInOrderArray()
+				: chosenRandomizer === "sortedArray"
+				? this.generateInOrderSortedArray()
+				: null;
+		}
 		let alg = e.target.value + " Sort";
-		this.setState({ algorithm: alg }, this.generateInOrderArray());
+		this.setState({ algorithm: alg }, syncGenCall());
 		console.log(alg);
 	};
 
