@@ -50,6 +50,56 @@ class Home extends Component {
 		this.generateInOrderArray();
 	}
 
+	generateInOrderSortedArray = () => {
+		let genArray = Array(this.state.arraySize);
+		for (let i = 1; i <= genArray.length; i++) {
+			genArray[i - 1] = i;
+		}
+
+		this.setState(
+			{
+				array: genArray,
+				stepHistory: []
+			},
+			this.createRecord
+		);
+	};
+
+	generateAlmostSortedInOrderArray = () => {
+		const ALG_SIZE_SHUFFLENESS_MAP = {
+			3: 1,
+			5: 2,
+			20: 10,
+			50: 25,
+			100: 50,
+			200: 100,
+			300: 150,
+			400: 200,
+			500: 250
+		};
+
+		function shuffleArray(arr, shuffleness) {
+			for (let i = arr.length - shuffleness; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[arr[i], arr[j]] = [arr[j], arr[i]];
+			}
+			return arr;
+		}
+		let genArray = Array(this.state.arraySize);
+		for (let i = 1; i <= genArray.length; i++) {
+			genArray[i - 1] = i;
+		}
+		let shuffleness = ALG_SIZE_SHUFFLENESS_MAP[genArray.length];
+		genArray = shuffleArray(genArray, shuffleness);
+		this.setState(
+			{
+				array: genArray,
+				stepHistory: []
+			},
+			this.createRecord
+		);
+	};
+
 	generateReverseInOrderArray = () => {
 		let genArray = Array(this.state.arraySize);
 		for (let i = 1; i <= genArray.length; i++) {
@@ -141,6 +191,8 @@ class Home extends Component {
 					onGenerateRandomArray={this.generateRandomArray}
 					onGenerateInOrderRandomArray={this.generateInOrderArray}
 					onGenerateReverseInOrderArray={this.generateReverseInOrderArray}
+					onGenerateAlmostSortedInOrderRandomArray={this.generateAlmostSortedInOrderArray}
+					onGenerateSortedArray={this.generateInOrderSortedArray}
 					algorithm={this.state.algorithm}
 					onAlgorithmChange={this.handleAlgorithmChange}
 					arraySize={this.state.arraySize}></HomeNavbar>

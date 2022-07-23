@@ -21,6 +21,10 @@ export default class Menu extends Component {
 					? this.props.onGenerateRandomArray()
 					: this.state.chosenRandomizer === "inOrderReverseRandomize"
 					? this.props.onGenerateReverseInOrderArray()
+					: this.state.chosenRandomizer === "inOrderAlmSortedRandomize"
+					? this.props.onGenerateAlmostSortedInOrderRandomArray()
+					: this.state.chosenRandomizer === "sortedArray"
+					? this.props.onGenerateSortedArray()
 					: null;
 			}
 		);
@@ -42,6 +46,23 @@ export default class Menu extends Component {
 					<span>About</span>
 				</Link>
 				<div id="home-right-menu-alg" className="right menu">
+					<div
+						className="pointerOnHover item"
+						onClick={
+							this.state.chosenRandomizer === "inOrderRandomize"
+								? this.props.onGenerateInOrderRandomArray
+								: this.state.chosenRandomizer === "randomRandomize"
+								? this.props.onGenerateRandomArray
+								: this.state.chosenRandomizer === "inOrderReverseRandomize"
+								? this.props.onGenerateReverseInOrderArray
+								: this.state.chosenRandomizer === "inOrderAlmSortedRandomize"
+								? this.props.onGenerateAlmostSortedInOrderRandomArray
+								: this.state.chosenRandomizer === "sortedArray"
+								? this.props.onGenerateSortedArray
+								: null
+						}>
+						<span>Re-Randomize!</span>
+					</div>
 					<div className="pointerOnHover item">
 						<select
 							className="myNavbarSelect pointerOnHover"
@@ -52,6 +73,8 @@ export default class Menu extends Component {
 							<option value="inOrderReverseRandomize">
 								Reverse Sorted Bounded Continuous Randomizer
 							</option>
+							<option value="inOrderAlmSortedRandomize">In Order Almost Sorted Randomizer</option>
+							<option value="sortedArray">Sorted Array</option>
 						</select>
 					</div>
 					<div className="pointerOnHover item">
