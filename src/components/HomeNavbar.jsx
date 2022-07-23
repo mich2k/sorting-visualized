@@ -15,6 +15,7 @@ export default class Menu extends Component {
 				chosenRandomizer: e.target.value
 			},
 			() => {
+				this.state.chosenRandomizer === "inOrderRandomize";
 				this.state.chosenRandomizer === "inOrderRandomize"
 					? this.props.onGenerateInOrderRandomArray()
 					: this.state.chosenRandomizer === "randomRandomize"
@@ -61,7 +62,7 @@ export default class Menu extends Component {
 								? this.props.onGenerateSortedArray
 								: null
 						}>
-						<span>Re-Randomize!</span>
+						<span>Randomize!</span>
 					</div>
 					<div className="pointerOnHover item">
 						<select
