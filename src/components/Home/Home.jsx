@@ -46,11 +46,6 @@ class Home extends Component {
 		"ThreeWayQuick Sort": ThreeWayQuickSortLegend
 	};
 
-	constructor(props) {
-		super(props);
-		this.generateInOrderArray = this.generateInOrderArray.bind(this);
-	}
-
 	componentDidMount() {
 		this.generateInOrderArray();
 	}

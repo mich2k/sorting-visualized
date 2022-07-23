@@ -1,7 +1,9 @@
 import React from "react";
 import "../../css/Home/LegendRow/LegendRow.css";
+import * as PropTypes from "prop-types";
 
-const LegendRow = ({ firstSet, secondSet, thirdSet, fourthSet, algorithm }) => {
+function LegendRow(props) {
+	let { firstSet, secondSet, thirdSet, fourthSet, algorithm } = props;
 	const elemSorted =
 		firstSet || secondSet || thirdSet || fourthSet ? (
 			<div className="Legend_Item">
@@ -72,6 +74,14 @@ const LegendRow = ({ firstSet, secondSet, thirdSet, fourthSet, algorithm }) => {
 			</span>
 		</div>
 	);
+}
+
+LegendRow.propTypes = {
+	firstSet: PropTypes.any,
+	secondSet: PropTypes.any,
+	thirdSet: PropTypes.any,
+	fourthSet: PropTypes.any,
+	algorithm: PropTypes.any
 };
 
 export default LegendRow;

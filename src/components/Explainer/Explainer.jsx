@@ -444,7 +444,7 @@ Sorting is typically done in-place, by iterating up the array, growing the sorte
 		};
 
 		function printTable(which) {
-			console.dir(alg_bodies[which].gif_src);
+			//console.dir(alg_bodies[which].gif_src);
 			return (
 				<div id="alg_description_table">
 					<div className="alg-description">

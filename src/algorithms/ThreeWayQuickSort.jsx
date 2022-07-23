@@ -15,7 +15,7 @@ const ThreeWayQuickSort = (nums) => {
 		moveInHistoryRecord(trace, array, lastSorted(trace), [start]);
 
 		while (k < end) {
-			console.dir(trace);
+			//console.dir(trace);
 			if (array[k] === pivot) {
 				moveInHistoryRecord(
 					trace,
