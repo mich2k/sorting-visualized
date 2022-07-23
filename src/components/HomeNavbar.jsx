@@ -67,6 +67,7 @@ export default class Menu extends Component {
 					<div className="pointerOnHover item">
 						<select
 							className="myNavbarSelect pointerOnHover"
+							id="randomizer-select"
 							onChange={this.handleRandomizerChange}
 							defaultValue="inOrderRandomize">
 							<option value="inOrderRandomize">Bounded Continuous Randomizer</option>

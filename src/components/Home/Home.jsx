@@ -166,7 +166,18 @@ class Home extends Component {
 
 	handleArraySizeChange = (e) => {
 		function syncGenCall() {
-			this.generateInOrderArray();
+			let chosenRandomizer = document.getElementById("randomizer-select").value;
+			chosenRandomizer === "inOrderRandomize"
+				? this.generateInOrderArray()
+				: chosenRandomizer === "randomRandomize"
+				? this.generateRandomArray()
+				: chosenRandomizer === "inOrderReverseRandomize"
+				? this.generateReverseInOrderArray()
+				: chosenRandomizer === "inOrderAlmSortedRandomize"
+				? this.generateAlmostSortedInOrderArray()
+				: chosenRandomizer === "sortedArray"
+				? this.generateInOrderSortedArray()
+				: null;
 		}
 		let arrLen = Number(e.target.value);
 		arrLen = arrLen > 500 ? 500 : arrLen;
