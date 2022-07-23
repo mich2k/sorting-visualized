@@ -178,7 +178,7 @@ class Explainer extends React.Component {
 				While it improves on bubble sort by more quickly moving items to the beginning of the list, it provides only marginal
 				performance improvements.
                     `,
-				snippet: `export function cocktailShakerSort (items) {
+				snippet: `function cocktailShakerSort (items) {
 					for (let i = items.length - 1; i > 0; i--) {
 					  let j
 				  
