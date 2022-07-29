@@ -34,7 +34,9 @@ export default class Menu extends Component {
 		return (
 			<div className="massive ui menu">
 				<Link className="item" to="/">
-					<div className="header">Sorting, Visualized.</div>
+					<div className="header" style={{ fontWeight: "bold" }}>
+						Sorting, Visualized.
+					</div>
 				</Link>
 				<Link className="item" to="/menu">
 					<span>Visualizer</span>

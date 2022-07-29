@@ -18,7 +18,7 @@ class About extends Component {
 		const footer = gsap.utils.toArray("#about-footer");
 		boxes.concat(footer).forEach((elem) => {
 			let myDuration = 2.5;
-			elem.id === "about-footer" ? (myDuration = 3.0) : (myDuration = 2.5);
+			elem.id === "about-footer" ? (myDuration = 2.5) : (myDuration = 2.5);
 
 			//console.log(myDuration);
 
