@@ -7,3 +7,6 @@
 Last branch-upgraded demo here: https://melodious-griffin-d59260.netlify.app/ [Netlify]
 
 Also avialable on: https://thesis.gmichele.it [Official build]
+
+
+<img src="/public/logo512.png" width="300px"/>
