@@ -1,6 +1,8 @@
 # Sorting, Visualized.
 
+My bachelor degree (CSE) project about Web Technologies applications
 
+written in React.js (check 'About' page for info)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aad8839d-95b4-4204-be94-65c3920c62d9/deploy-status)](https://app.netlify.com/sites/melodious-griffin-d59260/deploys)
 

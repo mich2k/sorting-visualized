@@ -38,7 +38,7 @@ class About extends Component {
 	}
 
 	render() {
-		const repo_url = "https://github.com/mich2k/SV";
+		const repo_url = "https://github.com/mich2k/sorting-visualized";
 		return (
 			<div className="about-main">
 				<Navbar></Navbar>
