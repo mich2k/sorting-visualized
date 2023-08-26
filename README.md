@@ -10,7 +10,7 @@ Last-commit upgraded demo here: <a href="https://melodious-griffin-d59260.netlif
 
 
 
-Also available on: <a href="https://thesis.gmichele.it" target="_blank" rel="noopener noreferrer">thesis.gmichele.it</a> [Official build]
+Also available on: <a href="https://bachelor.gmichele.com" target="_blank" rel="noopener noreferrer">bachelor.gmichele.com</a> [Official build]
 
 
 <img src="/public/logo512.png" width="300px"/>
