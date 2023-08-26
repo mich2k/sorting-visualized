@@ -1,3 +1,6 @@
 .vscode
 LICENSE
 README.md
+*.Dockerfile
+Dockerfile
+prod.Dockerfile
