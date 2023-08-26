@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file .prod.Dockerfile --tag mick2k1/svis:latest
+      run: docker build . --file prod.Dockerfile --tag mick2k1/svis:latest
     - name: Push the Image
       run: docker login -u mick2k1 -p ${{ secrets.SV_TOKEN }} && docker push mick2k1/svis:latest
