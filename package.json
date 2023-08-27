@@ -7,7 +7,7 @@
 		"@testing-library/react": "^13.0.0",
 		"@testing-library/user-event": "^13.2.1",
 		"eslint": "^8.18.0",
-		"gsap": "^3.10.4",
+		"gsap": "^3.12.2",
 		"nth-check": "^2.1.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
