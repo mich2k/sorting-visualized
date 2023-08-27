@@ -5,6 +5,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
+
     open-pull-requests-limit: 20
     
   - package-ecosystem: "docker"
@@ -14,8 +20,3 @@ updates:
     open-pull-requests-limit: 10
 
 
-  groups:
-    production-dependencies:
-      dependency-type: "production"
-    development-dependencies:
-      dependency-type: "development"
