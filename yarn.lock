@@ -4924,10 +4924,10 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-hydro-js@^1.5.3:
-  version "1.5.13"
-  resolved "https://registry.yarnpkg.com/hydro-js/-/hydro-js-1.5.13.tgz#86e9cd007cece147d40d389caa0c57551bc6bc0d"
-  integrity sha512-AO+cLwPLIeE5g9B3vNghrQ+CWsYPpIkedEBKeP6cjV7a/VvtvbvWOnMQvKIJjATKDxILwIsLyNCMPOTr0VNArA==
+hydro-js@^1.5.14:
+  version "1.5.14"
+  resolved "https://registry.yarnpkg.com/hydro-js/-/hydro-js-1.5.14.tgz#2d5bc131e78a96639276921340e067112c548929"
+  integrity sha512-UU0znl2iGohh6lUD+sRf54pOOWX4V9TZ4hXT0tDYsAc4ridvhqjGPCK4jK1hYHhAvn+z/cHSky+DFsuEudThWw==
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -6652,7 +6652,7 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha512-5DFkuoqlv1uYQKxy8omFBeJPQcdoE07Kv2sferDCrAq1ohOU+MSDswDIbnx3YAM60qIOnYa53wBhXW0EbMonrQ==
 
-path-to-regexp@^6.2.0:
+path-to-regexp@^6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.1.tgz#d54934d6798eb9e5ef14e7af7962c945906918e5"
   integrity sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==
@@ -7849,13 +7849,13 @@ rollup@^2.43.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
-router-dom@^2.2.9:
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/router-dom/-/router-dom-2.2.9.tgz#303bced1e716b8a8028a395575b435bc5e300578"
-  integrity sha512-2qksLSiXZe9hbI7qt8k45X8vAyqqTV4YvJkbOe3lA1yNSu6Tp3loTS+qhc/oYCkzBJfXn6zGy0r3/2dlC3eS2A==
+router-dom@^2.2.11:
+  version "2.2.11"
+  resolved "https://registry.yarnpkg.com/router-dom/-/router-dom-2.2.11.tgz#fb0278d1c741f2f4a887c73cb3966f1f3fc84057"
+  integrity sha512-prvwl6Ux6LQPgmlC7yDhbaItOt/7hcOlit5ZUcn2RxzYRcceaPVRFSHv8eigdpXw1poS0VwErltHHtuJnRW2JQ==
   dependencies:
-    hydro-js "^1.5.3"
-    path-to-regexp "^6.2.0"
+    hydro-js "^1.5.14"
+    path-to-regexp "^6.2.1"
 
 run-parallel@^1.1.9:
   version "1.2.0"
