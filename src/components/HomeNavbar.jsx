@@ -19,14 +19,14 @@ export default class Menu extends Component {
 				this.state.chosenRandomizer === "inOrderRandomize"
 					? this.props.onGenerateInOrderRandomArray()
 					: this.state.chosenRandomizer === "randomRandomize"
-					? this.props.onGenerateRandomArray()
-					: this.state.chosenRandomizer === "inOrderReverseRandomize"
-					? this.props.onGenerateReverseInOrderArray()
-					: this.state.chosenRandomizer === "inOrderAlmSortedRandomize"
-					? this.props.onGenerateAlmostSortedInOrderRandomArray()
-					: this.state.chosenRandomizer === "sortedArray"
-					? this.props.onGenerateSortedArray()
-					: null;
+						? this.props.onGenerateRandomArray()
+						: this.state.chosenRandomizer === "inOrderReverseRandomize"
+							? this.props.onGenerateReverseInOrderArray()
+							: this.state.chosenRandomizer === "inOrderAlmSortedRandomize"
+								? this.props.onGenerateAlmostSortedInOrderRandomArray()
+								: this.state.chosenRandomizer === "sortedArray"
+									? this.props.onGenerateSortedArray()
+									: null;
 			}
 		);
 	};
@@ -55,14 +55,14 @@ export default class Menu extends Component {
 							this.state.chosenRandomizer === "inOrderRandomize"
 								? this.props.onGenerateInOrderRandomArray
 								: this.state.chosenRandomizer === "randomRandomize"
-								? this.props.onGenerateRandomArray
-								: this.state.chosenRandomizer === "inOrderReverseRandomize"
-								? this.props.onGenerateReverseInOrderArray
-								: this.state.chosenRandomizer === "inOrderAlmSortedRandomize"
-								? this.props.onGenerateAlmostSortedInOrderRandomArray
-								: this.state.chosenRandomizer === "sortedArray"
-								? this.props.onGenerateSortedArray
-								: null
+									? this.props.onGenerateRandomArray
+									: this.state.chosenRandomizer === "inOrderReverseRandomize"
+										? this.props.onGenerateReverseInOrderArray
+										: this.state.chosenRandomizer === "inOrderAlmSortedRandomize"
+											? this.props.onGenerateAlmostSortedInOrderRandomArray
+											: this.state.chosenRandomizer === "sortedArray"
+												? this.props.onGenerateSortedArray
+												: null
 						}>
 						<span>Randomize!</span>
 					</div>

@@ -164,14 +164,14 @@ class Home extends Component {
 			chosenRandomizer === "inOrderRandomize"
 				? this.generateInOrderArray()
 				: chosenRandomizer === "randomRandomize"
-				? this.generateRandomArray()
-				: chosenRandomizer === "inOrderReverseRandomize"
-				? this.generateReverseInOrderArray()
-				: chosenRandomizer === "inOrderAlmSortedRandomize"
-				? this.generateAlmostSortedInOrderArray()
-				: chosenRandomizer === "sortedArray"
-				? this.generateInOrderSortedArray()
-				: null;
+					? this.generateRandomArray()
+					: chosenRandomizer === "inOrderReverseRandomize"
+						? this.generateReverseInOrderArray()
+						: chosenRandomizer === "inOrderAlmSortedRandomize"
+							? this.generateAlmostSortedInOrderArray()
+							: chosenRandomizer === "sortedArray"
+								? this.generateInOrderSortedArray()
+								: null;
 		}
 		let alg = e.target.value + " Sort";
 		this.setState({ algorithm: alg }, syncGenCall);
@@ -184,14 +184,14 @@ class Home extends Component {
 			chosenRandomizer === "inOrderRandomize"
 				? this.generateInOrderArray()
 				: chosenRandomizer === "randomRandomize"
-				? this.generateRandomArray()
-				: chosenRandomizer === "inOrderReverseRandomize"
-				? this.generateReverseInOrderArray()
-				: chosenRandomizer === "inOrderAlmSortedRandomize"
-				? this.generateAlmostSortedInOrderArray()
-				: chosenRandomizer === "sortedArray"
-				? this.generateInOrderSortedArray()
-				: null;
+					? this.generateRandomArray()
+					: chosenRandomizer === "inOrderReverseRandomize"
+						? this.generateReverseInOrderArray()
+						: chosenRandomizer === "inOrderAlmSortedRandomize"
+							? this.generateAlmostSortedInOrderArray()
+							: chosenRandomizer === "sortedArray"
+								? this.generateInOrderSortedArray()
+								: null;
 		}
 		let arrLen = Number(e.target.value);
 		arrLen = arrLen > 500 ? 500 : arrLen;
