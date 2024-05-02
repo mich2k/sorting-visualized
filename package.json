@@ -27,7 +27,7 @@
 		"start": "vite",
 		"build": "vite build",
 		"serve": "vite preview",
-		"format": "yarn prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+		"format": "npm run prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
 	},
 	"browserslist": {
 		"production": [
