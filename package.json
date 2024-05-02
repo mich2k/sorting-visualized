@@ -27,7 +27,6 @@
 		"build": "vite build",
 		"serve": "vite preview",
 		"format": "yarn prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
-
 	},
 	"browserslist": {
 		"production": [
@@ -44,10 +43,9 @@
 	"devDependencies": {
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
 		"@eslint/js": "^9.1.1",
-		"eslint-config-prettier": "^9.0.0",
+		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.0.0",
-		"eslint-plugin-react": "^7.34.1",
 		"globals": "^15.1.0",
-		"prettier": "^3.0.3"
+		"prettier": "^3.2.5"
 	}
 }
