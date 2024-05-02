@@ -11,6 +11,7 @@
 		"@vitejs/plugin-react": "^4.2.1",
 		"eslint": "^9.1.1",
 		"gsap": "^3.12.5",
+		"node-gyp": "^10.1.0",
 		"nth-check": "^2.1.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
@@ -47,6 +48,5 @@
 		"eslint-plugin-prettier": "^5.0.0",
 		"globals": "^15.1.0",
 		"prettier": "^3.2.5"
-	},
-	"peerDependencies": {}
+	}
 }
