@@ -5,23 +5,23 @@
 	"dependencies": {
 		"@testing-library/dom": "^10.1.0",
 		"@testing-library/jest-dom": "^6.4.5",
-		"@testing-library/react": "^15.0.6",
+		"@testing-library/react": "^16.0.0",
 		"@testing-library/user-event": "^14.5.2",
 		"@ungap/structured-clone": "^1.2.0",
-		"@vitejs/plugin-react": "^4.2.1",
-		"eslint": "^9.2.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint": "^9.4.0",
 		"gsap": "^3.12.5",
 		"nth-check": "^2.1.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.22.0",
+		"react-router-dom": "^6.23.1",
 		"react-syntax-highlighter": "^15.5.0",
 		"router-dom": "^2.2.11",
-		"sass": "^1.70.0",
+		"sass": "^1.77.4",
 		"semantic-ui-react": "^2.1.5",
 		"typewriter-effect": "^2.21.0",
-		"vite": "^5.2.11",
-		"web-vitals": "^3.5.2"
+		"vite": "^5.2.13",
+		"web-vitals": "^4.1.0"
 	},
 	"scripts": {
 		"start": "vite",
@@ -50,6 +50,6 @@
 		"prettier": "^3.2.5"
 	},
 	"optionalDependencies": {
-		"@rollup/rollup-linux-x64-gnu": "^4.17.2"
+		"@rollup/rollup-linux-x64-gnu": "^4.18.0"
 	}
 }
