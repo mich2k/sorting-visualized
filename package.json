@@ -42,12 +42,12 @@
 		]
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.1.1",
+		"@eslint/js": "^9.6.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.0.0",
-		"globals": "^15.1.0",
+		"globals": "^15.7.0",
 		"node-gyp": "^10.1.0",
-		"prettier": "^3.2.5"
+		"prettier": "^3.3.2"
 	},
 	"optionalDependencies": {
 		"@rollup/rollup-linux-x64-gnu": "^4.17.2"
